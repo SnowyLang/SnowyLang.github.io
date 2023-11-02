@@ -1,0 +1,51 @@
+*{
+  transition:0.3s!important;
+}
+h1{
+    font-size: 50px;
+    font-weight: 100;
+}
+.italics{
+    font-style: italic;
+}
+.top{
+    background-color: #212121;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 50%;
+    height:100%;
+    z-index: -1;
+    position: fixed;
+  }
+  a{color:white}
+  .br{
+    background-color: #262626;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    height:50%;
+    width:50%;
+    height:50%;
+    position: fixed;
+  }
+.big-text{
+  font-size: 50px;
+}
+@keyframes background-pan {
+  from{
+    background-position: 0% center;
+  }
+  to{
+    background-position: -200% center;
+  }
+}
+.grad{
+  animation: background-pan 3s linear infinite;
+  background-image: linear-gradient(to right, rgb(136, 136, 255),lightblue,rgb(102, 102, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  background-size: 200%;
+}
