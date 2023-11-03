@@ -11,6 +11,10 @@ $^
 $%br
 $!&nbsp;
 $^
+$%footer
+$!Powered by,
+$ifa fa-snowflake-o
+$^
 *   BODY   *
 $%bc-text-white bc-true-center bc-text-align
 $#Snowy 🌨️
@@ -44,3 +48,4 @@ $.https://github.com/SnowyLang
 $aGithub
 $^
 $^
+
