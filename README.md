@@ -1,2 +1,3 @@
-# SnowyLang.github.io
-The Snowy of Github
+# Sno 🌨️
+
+> The host location for the Snowy website
