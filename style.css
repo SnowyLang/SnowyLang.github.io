@@ -1,22 +1,88 @@
-*{
-  transition:0.3s!important;
+*{transition: 0.3s;color: white;margin:0;padding:0;}
+body{
+    text-align:center;
+    background-color: #242424;
+    font-family: sans-serif;
 }
-h1{
+.medium{
+    font-size: 40px;
+}
+.large{
     font-size: 50px;
-    font-weight: 100;
+}
+.xlarge{
+    font-size: 60px;
+}
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: 900;
+}
+@keyframes background-pan {
+    from{
+        background-position: 0% center;
+    }
+    to{
+        background-position: -200% center;
+    }
+}
+.grad{
+    animation: background-pan 3s linear infinite;
+    background-image: linear-gradient(to right, rgb(136, 136, 255),lightblue,rgb(102, 102, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    background-size: 200%;
+}
+.hover-grad:hover{
+    animation: background-pan 3s linear infinite;
+    background-image: linear-gradient(to right, rgb(136, 136, 255),lightblue,rgb(102, 102, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    background-size: 200%;
+}
+.activate:hover > .hover-gradalt{
+    animation: background-pan 3s linear infinite;
+    background-image: linear-gradient(to right, rgb(136, 255, 148),lightgreen,rgb(102, 255, 112));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    background-size: 200%;
+}
+.opac{
+    opacity: 0.6;
+}
+.footer{
+    position: fixed;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.252);
+}
+.button{
+    border:1px solid gray;
+    position: absolute; width:fit-content!important; left:50%; transform: translate(-50%,-0%);position: relative;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:80px;
+    padding-right:80px;
+}
+a{color:white;text-decoration: none;}
+.button:hover{
+    padding-top:20px;
+    padding-bottom:20px;
 }
 .italics{
     font-style: italic;
+    color:rgba(255, 255, 255, 0.64);
 }
-.footer{
-  position: fixed;
-  bottom:0;
-  left:50%;
-  transform: translate(-50%);
-  font-style: italic;
-  color:rgba(255, 255, 255, 0.252);
-}
-.top{
+.side-full-bg{
     background-color: #212121;
     position: absolute;
     left:0;
@@ -25,9 +91,8 @@ h1{
     height:100%;
     z-index: -1;
     position: fixed;
-  }
-  a{color:white}
-  .br{
+}
+.side-top-bg{
     background-color: #262626;
     z-index: -1;
     position: absolute;
@@ -36,24 +101,4 @@ h1{
     width:50%;
     height:50%;
     position: fixed;
-  }
-.big-text{
-  font-size: 50px;
-}
-@keyframes background-pan {
-  from{
-    background-position: 0% center;
-  }
-  to{
-    background-position: -200% center;
-  }
-}
-.grad{
-  animation: background-pan 3s linear infinite;
-  background-image: linear-gradient(to right, rgb(136, 136, 255),lightblue,rgb(102, 102, 255));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-  background-size: 200%;
 }
