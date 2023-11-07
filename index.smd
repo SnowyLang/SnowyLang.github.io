@@ -1,51 +1,36 @@
-$tSnowy
-$|#242424
-$=../bc.css
+$t.Sno Blizzard
 $=style.css
 $=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-$fhttps://avatars.githubusercontent.com/u/149719209?s=200&v=4
-*   BGCH   *
-$%top
-$!&nbsp;
+$%.side-top-bg
 $^
-$%br
-$!&nbsp;
+$%.side-full-bg
 $^
-$%footer
-$!Powered by,
-$ifa fa-snowflake-o
+$%.footer 
+$!.italics|Powered by, 
+$i.fa fa-snowflake-o italics
 $^
-*   BODY   *
-$%bc-text-white bc-true-center bc-text-align
-$#Snowy 🌨️
-$litalics
-$pv0.2
-$b
-$b
-*   SubHeader  *
-$lbig-text
-$-MARKDOWN 
-$lbig-text bc-text-bold grad
-$-EMPOWERED
-%^
-*   Buttons    *
-$b
-$b
-
-$%griditem
-$%floater bc-text-bold
-$%trs bc-hover-border bc-bdc-white bc-p-10 
-$ifa fa-file-text
-$!Zero Javascript Always
+$br2
+$!.large|Sno 🌨️
+$!.italics|(v2)
+$#.bold opac medium grad|___ BLIZZARD ___
+$br1
+$!.xlarge|MARKDOWN&nbsp;
+$!.xlarge bolder grad|EMPOWERED
+$br3
+$%.button hover-grad
+$i.fa fa-file-text
+$!.text|A Fast, Simple HTML Preprocessor
 $^
-$%trs bc-hover-border bc-bdc-white bc-p-10 
-$ifa fa-snowflake-o
-$!Simple, Concise, Fast
+$br1
+$%.button hover-grad
+$i.fa fa-snowflake-o
+$!.text|Zero Javascript Shipped on build
 $^
-$%trs bc-hover-border bc-bdc-white bc-p-10 
-$ifa fa-github 
-$.https://github.com/SnowyLang
-$aGithub
+$br1
+$%.button hover-grad activate
+$i.fa fa-github
+$l.https://github.com/SnowyLang/Sno
+$a.text|Sno BLIZZARD 
+$a.hover-gradalt|Github
+$a.text| Page
 $^
-$^
-
