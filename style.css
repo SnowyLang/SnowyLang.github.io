@@ -70,8 +70,8 @@ body{
     position: absolute; width:fit-content!important; left:50%; transform: translate(-50%,-0%);position: relative;
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:80px;
-    padding-right:80px;
+    padding-left:50px;
+    padding-right:50px;
 }
 a{color:white;text-decoration: none;}
 .button:hover{
