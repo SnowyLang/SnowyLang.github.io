@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sno - More with Less</title>
     <link rel="stylesheet" href="https://classicmc-studios.github.io/bc.css"/>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/149719209?s=200&v=4"/>
+
     <style type="text/css">
     	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@900&family=Roboto:wght@100&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
         *{
             font-family:'Open Sans',sans-serif;
+            color:white;
         }
         h1{
             font-size: 60px;
+            font-family:"Merriweather";
+        }
+        h2{
+            font-family:"Merriweather";
+          
         }
         .sub{
             font-family: 'Open Sans',sans-serif;
@@ -25,7 +35,7 @@
             font-family: 'Open Sans',sans-serif;
         }
         b{
-            font-weight: 100;
+            font-weight: 400;
             font-family: 'Open Sans',sans-serif;
         }
         .item{
@@ -57,9 +67,10 @@
             padding: 5px;
             border-left: 2px solid gray;
             margin-left:var(--mar);margin-left:var(--mar);
+            font-family:"Merriweather";
         }
         pre code {
-          background-color: #eee;
+          background-color: #2b2b2b;
           border-radius: 10px;
           display: block;
           padding: 20px;
@@ -76,20 +87,20 @@
     </p><br/>
     <p>A new Lightweight JavaScript framework to add reactivity in a **<b>snap</b>**</p><br/>
     <div class="bc-border true-center-with-mac">
-        <button click="counter++;" class="bc-white bc-text-black bc-border bc-p-5 bc-hover-p-10 bc-m-10 bc-r-0">Increment</button>
+        <button click="counter++;" class="bc-white bc-text-black bc-p-5 bc-hover-p-10 bc-m-10 bc-r-5">Increment</button>
         <p lint>
             Count: {{counter}}
         </p>
     </div><br/><br/>
-    <div class="bc-border true-center-with-mac bc-p-25">
+    <div class="bc-border true-center-with-mac bc-p-25 bc-r-5">
         <h2 id="with-attr"><a href="#with-attr">##</a> With Attributes Like...</h2>
         <ol style="text-align:left;" class="bc-m-10" for="attr" item="li" item-class="item"></ol>
     </div><br/><br/>
     <h2><a href="#TINY">##</a> Absolutely <em id="TINY">TINY</em></h2>
     <div>
-        <button click='active="src is 5.01kb"' class="bc-white bc-text-black bc-border bc-p-5 bc-hover-p-10 bc-m-5 bc-r-0">Source</button>
-        <button click='active="min is 3.46kb"' class="bc-white bc-text-black bc-border bc-p-5 bc-hover-p-10 bc-m-5 bc-r-0">Min</button>
-        <button click='active="build is 1.57kb"' class="bc-white bc-text-black bc-border bc-p-5 bc-hover-p-10 bc-m-5 bc-r-0">Build</button><br/>
+        <button click='active="src is 5.01kb"' class="bc-white bc-text-black bc-p-5 bc-hover-p-10 bc-m-5 bc-r-5">Source</button>
+        <button click='active="min is 3.46kb"' class="bc-white bc-text-black bc-p-5 bc-hover-p-10 bc-m-5 bc-r-5">Min</button>
+        <button click='active="build is 1.57kb"' class="bc-white bc-text-black bc-p-5 bc-hover-p-10 bc-m-5 bc-r-5">Build</button><br/>
         <span>Sno</span>
         <em lint>
             {{active}}!!
