@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sno - No Eval</title>
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/149719209?s=200&v=4"/>
+  <script src="https://snojs.github.io/petite-sno/noeval/min.js"></script>
+  <link rel="stylesheet" href="https://guyotjs.github.io/bcss/bc.css"/>
+</head>
+<body>
+  <div class="true-center text-center">
+    <p id="count" class="f-xl"></p>
+    <button onclick="add()" class="p bg-white border-gray r">+</button>
+  </div>
+  <script>
+    let count = 0;
+    function add(){
+      count = $set(count+1);
+    }
+    $scope(()=>{return count},"count");
+  </script>
+</body>
+</html>
