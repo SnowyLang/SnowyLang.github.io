@@ -17,7 +17,6 @@
       margin:0;
       padding:0;
       overflow-x: hidden;
-      background-color:#242424;
       color:white;
     }
     .ehh{
@@ -29,6 +28,9 @@
     b{
       font-weight:600;
     }
+    .blur{
+      backdrop-filter:blur(10px);
+    }
     .f-respond{
       font-size: 17px;
       white-space: nowrap;
@@ -37,13 +39,13 @@
       font-weight: 900;
     }
     .border-light{
-      border: 1px solid lightgray;
+      border: 1px solid gray;
     }
     .border-right-light{
-      border-right: 1px solid lightgray;
+      border-right: 1px solid gray;
     }
     .border-bottom-light{
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid gray;
     }
     .plr-l{
       padding-left: 32px;
@@ -74,6 +76,14 @@
       left:0;
       width: 93.5%;
     }
+    #myCanvas{
+      position:fixed;
+      z-index:-1000;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
   </style>
 </head>
 <body data='{
@@ -90,7 +100,7 @@
     <p>Building the web <span class="grad karla fw-strong">{ your way }.</span></p>
   </div><br/><br/>
   <div class="text-center m-m" computer>
-    <div class="grid-2 left-center border-light r">
+    <div class="grid-2 left-center border-light r blur">
       <div class="border-right-light">
         <div class="plr-l f-respond p-m text-left karla">
           <span class="gray">1|</span> &lt;<b>body</b> data=<span class="ehh">'{count:0}'</span>&gt;<br/>
@@ -107,7 +117,7 @@
     </div>
   </div>
   <div class="text-center m-m" mobile>
-    <div class="left-center border-light r">
+    <div class="left-center border-light r blur">
       <div class="border-bottom-light">
         <div class="plr-l f-respond p-m text-left karla">
           <span class="gray">1|</span> &lt;<b>body</b> data=<span class="ehh">'{count:0}'</span>&gt;<br/>
@@ -144,5 +154,52 @@
     }
   </script>
   <script src="https://snojs.github.io/sno/crystal.js"></script>
+  <canvas id="myCanvas"></canvas>
+  <script src="https://classicmc-studios.github.io/js/moss.js"></script>
+  <script>
+	createCanvas(screen.width,screen.height);
+    bg("#242424");
+      //Snow_Particles
+    var angle = 0;
+    var W = screen.width;
+    var H = screen.height;  
+    var mp = 50;//max particles
+    var particles = [];
+    for(var i = 0; i < mp; i++){
+        particles.push({
+            x: Math.random()*W,
+            y: Math.random()*H,
+            r: Math.random()*4+1,
+            d: Math.random()*mp
+        });
+    }
+    function update(){
+      angle += 0.01;
+      for(var i = 0; i < mp; i++){
+          var p = particles[i];
+          p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+          p.x += Math.sin(angle) * 2;
+          if(p.x > W+5 || p.x < -5 || p.y > H){
+              if(i%3 > 0){particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};}
+              else{
+                  if(Math.sin(angle) > 0){particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};}
+                  else{particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};}
+              }
+          }
+      }
+    }
+    function draw(){
+      for(var i = 0; i < mp; i++){
+          noStroke();selectColor("#ffffff");var p = particles[i];ellipse(p.x,p.y,p.r);
+       }
+       update();
+      }
+    window.main = function(){
+      requestAnimationFrame( main )
+      bg("#242424");
+      draw();
+    };main();
+  </script>
+
 </body>
 </html>
