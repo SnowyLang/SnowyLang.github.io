@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://guyotjs.github.io/bcss/bc.css">
   <link rel="stylesheet" href="https://guyotjs.github.io/bcss/bc-colors.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
     body{
@@ -15,8 +18,14 @@
       padding:0;
       overflow-x: hidden;
     }
+    .ehh{
+      color:darkgreen;
+    }
     .f-xxl{
       font-size: 80px;
+    }
+    b{
+      font-weight:600;
     }
     .f-respond{
       font-size: 17px;
@@ -81,11 +90,11 @@
     <div class="grid-2 left-center border-light r">
       <div class="border-right-light">
         <div class="plr-l f-respond p-m text-left karla">
-          <span class="gray">1|</span> &lt;body data='{count:0}'&gt;<br/>
-          <span class="gray">2|</span> &emsp;&lt;p react&gt;{{count}}&lt;/p&gt;<br/>
-          <span class="gray">3|</span> &emsp;&lt;button onclick='$("count++")'&gt;+&lt;/button&gt;<br/>
-          <span class="gray">4|</span> &emsp;&lt;script src="./sno.js"&gt;&lt;/script&gt;<br/>
-          <span class="gray">5|</span> &lt;/body&gt;<br/>
+          <span class="gray">1|</span> &lt;<b>body</b> data=<span class="ehh">'{count:0}'</span>&gt;<br/>
+          <span class="gray">2|</span> &emsp;&lt;<b>p</b> react&gt;<span class="pumpkin">{{count}}</span>&lt;/<b>p</b>&gt;<br/>
+          <span class="gray">3|</span> &emsp;&lt;<b>button</b> onclick=<span class="ehh">'$("count++")'</span>&gt;+&lt;/<b>button</b>&gt;<br/>
+          <span class="gray">4|</span> &emsp;&lt;<b>script</b> src=<span class="calm">"./sno.js"</span>&gt;&lt;/<b>script</b>&gt;<br/>
+          <span class="gray">5|</span> &lt;/<b>body</b>&gt;<br/>
         </div>
       </div>
       <div class="plr-l p-m" style="margin-top:15px;">
@@ -98,11 +107,11 @@
     <div class="left-center border-light r">
       <div class="border-bottom-light">
         <div class="plr-l f-respond p-m text-left karla">
-          <span class="gray">1|</span> &lt;body data='{"count":0}'&gt;<br/>
-          <span class="gray">2|</span> &emsp;&lt;p react&gt;{{count}}&lt;/p&gt;<br/>
-          <span class="gray">3|</span> &emsp;&lt;button onclick='$("count++")'&gt;+&lt;/button&gt;<br/>
-          <span class="gray">4|</span> &emsp;&lt;script src="./sno.js"&gt;&lt;/script&gt;<br/>
-          <span class="gray">5|</span> &lt;/body&gt;<br/>
+          <span class="gray">1|</span> &lt;<b>body</b> data=<span class="ehh">'{count:0}'</span>&gt;<br/>
+          <span class="gray">2|</span> &emsp;&lt;<b>p</b> react&gt;<span class="pumpkin">{{count}}</span>&lt;/<b>p</b>&gt;<br/>
+          <span class="gray">3|</span> &emsp;&lt;<b>button</b> onclick=<span class="ehh">'$("count++")'</span>&gt;+&lt;/<b>button</b>&gt;<br/>
+          <span class="gray">4|</span> &emsp;&lt;<b>script</b> src=<span class="calm">"./sno.js"</span>&gt;&lt;/<b>script</b>&gt;<br/>
+          <span class="gray">5|</span> &lt;/<b>body</b>&gt;<br/>
         </div>
       </div>
       <div class="p">
